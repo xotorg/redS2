@@ -13,8 +13,9 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v2.0
         with:
-          token: ${{ secrets.PERSONAL_TOKEN }}
           repo: redS2
           owner: xotorg
           base: master
           head: master
+          auto_approve: true
+          token: ${{ secrets.PERSONAL_TOKEN }}
